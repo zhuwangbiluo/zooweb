@@ -1,1 +1,11 @@
-/target/
+target/
+.idea/
+*.iml
+*.ipr
+*.iws
+*.tar.gz
+*.classpath
+*.project
+.settings/
+/bin
+
