@@ -1,4 +1,3 @@
-import com.zhy.zooweb.web.ZkCacheServlet;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
@@ -19,7 +18,7 @@ public class Application {
 
     @Bean
     public ServletRegistrationBean zkCacheServlet() {
-        ServletRegistrationBean registration = new ServletRegistrationBean(new ZkCacheServlet());
+        ServletRegistrationBean registration = new ServletRegistrationBean();
         registration.addUrlMappings("/hello");
         return registration;
     }
